@@ -62,9 +62,9 @@ export const WeekDaySelector = ({ selectedDate, onDateSelect }) => {
             >
               {/* Date */}
               <span
-                className="font-zaglav font-normal leading-none mb-1"
+                className="font-zaglav font-normal leading-none mb-0.5"
                 style={{
-                  fontSize: '52px',
+                  fontSize: '40px',
                   color: isSelected ? '#F9F9F9' : '#BEBEBE',
                   fontWeight: 400
                 }}
@@ -76,7 +76,7 @@ export const WeekDaySelector = ({ selectedDate, onDateSelect }) => {
               <span
                 className="font-zaglav font-normal leading-none"
                 style={{
-                  fontSize: '36px',
+                  fontSize: '24px',
                   color: '#999999',
                   fontWeight: 400
                 }}
