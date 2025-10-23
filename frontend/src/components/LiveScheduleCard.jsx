@@ -18,38 +18,38 @@ export const LiveScheduleCard = ({ currentClass, minutesLeft }) => {
   };
 
   return (
-    <div className="px-6 mt-4 mb-[20px]">
-      <div className="relative pb-[49px] pr-[31px]">
-        {/* 3rd layer - самая дальняя (Y: 176, смещение от 1-й: +49px по Y, +31px по X) */}
+    <div className="mt-4 mb-[20px] flex justify-center">
+      <div className="relative" style={{ width: '373px', paddingBottom: '49px' }}>
+        {/* 3rd layer - самая маленькая и дальняя */}
         <div 
-          className="absolute rounded-3xl"
+          className="absolute rounded-3xl mx-auto left-0 right-0"
           style={{ 
             backgroundColor: '#212121',
+            width: '311px',
+            height: '140px',
             top: '49px',
-            left: '31px',
-            right: '-31px',
-            bottom: 0,
             zIndex: 1
           }}
         ></div>
-        {/* 2nd layer - средняя (Y: 149, смещение от 1-й: +22px по Y, +13px по X) */}
+        {/* 2nd layer - средняя */}
         <div 
-          className="absolute rounded-3xl"
+          className="absolute rounded-3xl mx-auto left-0 right-0"
           style={{ 
             backgroundColor: '#2C2C2C',
+            width: '347px',
+            height: '156px',
             top: '22px',
-            left: '13px',
-            right: '-13px',
-            bottom: '27px',
             zIndex: 2
           }}
         ></div>
         
-        {/* Main card - 1-я карточка (Y: 127, X: 27) */}
+        {/* Main card - 1-я карточка (самая большая) */}
         <div 
           className="relative rounded-3xl p-6 shadow-card overflow-hidden"
           style={{ 
             backgroundColor: '#343434',
+            width: '373px',
+            height: '167px',
             zIndex: 3
           }}
         >
