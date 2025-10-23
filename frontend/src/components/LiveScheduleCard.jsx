@@ -18,8 +18,8 @@ export const LiveScheduleCard = ({ currentClass, minutesLeft }) => {
   };
 
   return (
-    <div className="px-6 mt-4">
-      <div className="relative">
+    <div className="px-6 mt-4 mb-6">
+      <div className="relative pb-[22px]">
         {/* Background layers with offset and darkening */}
         <div 
           className="absolute rounded-3xl w-full h-full"
