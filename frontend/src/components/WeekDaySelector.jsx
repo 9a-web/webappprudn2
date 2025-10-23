@@ -50,7 +50,7 @@ export const WeekDaySelector = ({ selectedDate, onDateSelect }) => {
               key={index}
               onClick={() => handleDayClick(index, day)}
               className={`
-                flex-shrink-0 w-[90px] h-[100px] rounded-[20px] flex flex-col items-center justify-center
+                flex-shrink-0 rounded-[40px] flex flex-col items-center justify-center
                 transition-all duration-300 hover:scale-105 active:scale-95
                 ${
                   isSelected
@@ -58,6 +58,7 @@ export const WeekDaySelector = ({ selectedDate, onDateSelect }) => {
                     : 'bg-[#2C2C2C] hover:bg-[#353535]'
                 }
               `}
+              style={{ width: '61px', height: '99px' }}
             >
               {/* Date */}
               <span
