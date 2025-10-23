@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 export const WeekDaySelector = ({ selectedDate, onDateSelect }) => {
   const [weekDays, setWeekDays] = useState([]);
-  const [selectedIndex, setSelectedIndex] = useState(1); // Default to today (second button)
+  const [selectedIndex, setSelectedIndex] = useState(0); // Default to today (first button)
 
   useEffect(() => {
     generateWeekDays();
