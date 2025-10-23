@@ -109,6 +109,16 @@ html {
   background: hsl(var(--accent));
 }
 
+/* Hide scrollbar for horizontal scroll */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Gradient text utility */
 .gradient-text {
   background: var(--gradient-live);
