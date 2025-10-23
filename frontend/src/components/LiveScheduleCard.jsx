@@ -77,14 +77,14 @@ export const LiveScheduleCard = ({ currentClass, minutesLeft }) => {
                 style={{ filter: 'blur(4px)', opacity: 0.8 }}
               />
               
-              {/* Main circle with image border */}
+              {/* Main circle with image border - thicker border */}
               <div className="relative w-24 h-24">
                 <img 
                   src="/circle-gradient.png" 
                   alt="Gradient circle" 
                   className="absolute w-full h-full"
                 />
-                <div className="absolute inset-[3px] rounded-full flex items-center justify-center" style={{ backgroundColor: '#343434' }}>
+                <div className="absolute inset-[5px] rounded-full flex items-center justify-center" style={{ backgroundColor: '#343434' }}>
                   <span className="text-xl font-bold" style={{ color: '#FFFFFF' }}>
                     {formatTime(time)}
                   </span>
