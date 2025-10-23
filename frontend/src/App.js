@@ -83,6 +83,12 @@ const Home = () => {
       <Header onCalendarClick={handleCalendarClick} />
       <LiveScheduleCard currentClass={currentClass} minutesLeft={minutesLeft} />
       
+      {/* Week Day Selector */}
+      <WeekDaySelector 
+        selectedDate={selectedDate}
+        onDateSelect={handleDateSelect}
+      />
+      
       {/* Calendar Modal */}
       <CalendarModal
         isOpen={isCalendarOpen}
