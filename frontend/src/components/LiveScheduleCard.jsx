@@ -18,27 +18,34 @@ export const LiveScheduleCard = ({ currentClass, minutesLeft }) => {
   };
 
   return (
-    <div className="px-6 mt-4 mb-6">
-      <div className="relative pb-[22px]">
-        {/* Background layers with offset and darkening */}
+    <div className="px-6 mt-4 mb-[20px]">
+      <div className="relative pb-[49px] pr-[31px]">
+        {/* 3rd layer - самая дальняя (Y: 176, смещение от 1-й: +49px по Y, +31px по X) */}
         <div 
-          className="absolute rounded-3xl w-full h-full"
+          className="absolute rounded-3xl"
           style={{ 
             backgroundColor: '#212121',
-            top: '22px',
+            top: '49px',
+            left: '31px',
+            right: '-31px',
+            bottom: 0,
             zIndex: 1
           }}
         ></div>
+        {/* 2nd layer - средняя (Y: 149, смещение от 1-й: +22px по Y, +13px по X) */}
         <div 
-          className="absolute rounded-3xl w-full h-full"
+          className="absolute rounded-3xl"
           style={{ 
             backgroundColor: '#2C2C2C',
-            top: '11px',
+            top: '22px',
+            left: '13px',
+            right: '-13px',
+            bottom: '27px',
             zIndex: 2
           }}
         ></div>
         
-        {/* Main card */}
+        {/* Main card - 1-я карточка (Y: 127, X: 27) */}
         <div 
           className="relative rounded-3xl p-6 shadow-card overflow-hidden"
           style={{ 
