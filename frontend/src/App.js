@@ -5,6 +5,7 @@ import './App.css';
 import { Header } from './components/Header';
 import { LiveScheduleCard } from './components/LiveScheduleCard';
 import { CalendarModal } from './components/CalendarModal';
+import { WeekDaySelector } from './components/WeekDaySelector';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
