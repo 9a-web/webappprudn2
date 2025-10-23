@@ -68,18 +68,26 @@ export const LiveScheduleCard = ({ currentClass, minutesLeft }) => {
             </div>
 
             {/* Right side - Gradient circle with time */}
-            <div className="relative flex items-center justify-center">
-              {/* Gradient circle border */}
-              <div className="absolute w-24 h-24 rounded-full bg-gradient-live animate-pulse-glow" style={{ filter: 'blur(8px)', opacity: 0.6 }}></div>
+            <div className="relative flex items-center justify-center w-24 h-24">
+              {/* Gradient circle border as image */}
+              <img 
+                src="/circle-gradient.png" 
+                alt="Gradient circle" 
+                className="absolute w-24 h-24 animate-pulse-glow"
+                style={{ filter: 'blur(4px)', opacity: 0.8 }}
+              />
               
-              {/* Main circle */}
-              <div className="relative w-24 h-24 rounded-full p-[3px] bg-gradient-live">
-                <div className="w-full h-full rounded-full" style={{ backgroundColor: '#343434' }}>
-                  <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-xl font-bold" style={{ color: '#FFFFFF' }}>
-                      {formatTime(time)}
-                    </span>
-                  </div>
+              {/* Main circle with image border */}
+              <div className="relative w-24 h-24">
+                <img 
+                  src="/circle-gradient.png" 
+                  alt="Gradient circle" 
+                  className="absolute w-full h-full"
+                />
+                <div className="absolute inset-[3px] rounded-full flex items-center justify-center" style={{ backgroundColor: '#343434' }}>
+                  <span className="text-xl font-bold" style={{ color: '#FFFFFF' }}>
+                    {formatTime(time)}
+                  </span>
                 </div>
               </div>
             </div>
