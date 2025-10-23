@@ -12,8 +12,8 @@ export const WeekDaySelector = ({ selectedDate, onDateSelect }) => {
     const today = new Date();
     const days = [];
     
-    // Generate 6 days: yesterday, today, and next 4 days
-    for (let i = -1; i < 5; i++) {
+    // Generate 7 days: yesterday, today, and next 5 days
+    for (let i = -1; i < 6; i++) {
       const date = new Date(today);
       date.setDate(today.getDate() + i);
       days.push({
